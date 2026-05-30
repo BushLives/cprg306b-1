@@ -10,6 +10,15 @@ export default function PoundsKilograms() {
         <br />
         <Link href="/farenheit-celcius">farenheit-celcius</Link>
       </nav>
+      <div>
+        <h1>Convert between pounds and kilograms</h1>
+        {/* input box */}
+        <div></div>
+        {/* switch button */}
+        <div></div>
+        {/* output box */}
+        <div></div>
+      </div>
     </div>
   );
 }
