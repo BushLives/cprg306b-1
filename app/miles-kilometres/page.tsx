@@ -2,14 +2,26 @@ import Link from "next/link";
 
 export default function MilesKilometres() {
   return (
-    <div className="">
-      <nav>
-        <Link href="/pounds-kilograms">pounds-kilograms</Link>
-        <br />
-        <Link href="/miles-kilometres">miles-kilometres</Link>
-        <br />
-        <Link href="/farenheit-celcius">farenheit-celcius</Link>
+    <div className="bg-gray-800 font-sans">
+      <nav className="bg-gray-800 shadow-md w-full rounded">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">Imperial & Metric Converter
+          <div className="hidden md:flex space-x-8">
+            <a href="/pounds-kilograms" className="text-white hover:text-blue-600">pounds-kilograms</a>
+            <a href="/miles-kilometres" className="text-white hover:text-blue-600">miles-kilometres</a>
+            <a href="/farenheit-celcius" className="text-white hover:text-blue-600">farenheit-celcius</a>
+          </div>
+        </div>
       </nav>
+
+      <div>
+        <h1>Miles to Kilometres</h1>
+        {/* input box */}
+        <div></div>
+        {/* switch button */}
+        <div></div>
+        {/* output box */}
+        <div></div>
+      </div>
     </div>
   );
 }
