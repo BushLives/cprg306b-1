@@ -12,6 +12,8 @@ export function converter(convertFromUnit, convertToUnit){
         'kilos-pounds': (x) => x * 2.2046226218,
         'miles-kilometers': (x) => x * 1.60934,
         'kilometers-miles': (x) => x * 0.621371,
+        'fahrenheit-celcius':(x) => (x - 32 ) * 0.5556,
+        'celcius-fahrenheit': (x) =>(x * 1.8) + 32
     }
 
     const key = `${convertFromUnit}-${convertToUnit}`
