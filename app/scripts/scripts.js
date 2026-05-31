@@ -1,15 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const convert = document.getElementById('convert-button')
+document.getElementById('convertbutton').addEventListener('click', () => {
+    const MtoKM = converter(miles, kilometers);
+    const mileNum = Number(document.getElementById('milesInput').value);
+    const resultKM = MtoKM(mileNum);
 
-    convert.addEventListener('click', () => {
-        const MtoKM = convert('miles', 'kilometers');
-        const miles = document.getElementById('miles').value;
-
-        const kilometers = MtoKM(miles)
-
-        document.getElementById("resultKM").textContent = `${miles} Miles = ${kilometers} kilometres`;
-    })
+    document.getElementById('outputKM').textContent = "${mileNum} Miles = ${resultKM} Kilometres";
 })
 
 function converter(convertFromUnit, convertToUnit){
