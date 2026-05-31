@@ -1,5 +1,4 @@
 import Script from "next/script";
-import { Converter } from "../components/Converter";
 
 export default function farenheitCelcius() {
   return (
