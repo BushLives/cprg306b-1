@@ -6,12 +6,14 @@ document.getElementById('convertbutton').addEventListener('click', () => {
     document.getElementById('outputKM').textContent = "${mileNum} Miles = ${resultKM} Kilometres";
 })
 
-function converter(convertFromUnit, convertToUnit){
+export function converter(convertFromUnit, convertToUnit){
     const conversions = {
         'pounds-kilos': (x) => x * 0.45359237,
         'kilos-pounds': (x) => x * 2.2046226218,
         'miles-kilometers': (x) => x * 1.60934,
         'kilometers-miles': (x) => x * 0.621371,
+        'fahrenheit-celcius':(x) => (x - 32 ) * 0.5556,
+        'celcius-fahrenheit': (x) =>(x * 1.8) + 32
     }
 
     const key = `${convertFromUnit}-${convertToUnit}`
