@@ -40,7 +40,7 @@ export default function MilesKilometres() {
         
         <input type="number" value={inputValue} onChange={(e) => setInputValue(e.target.value)} id="milesInput" placeholder="Enter Miles" className="block min-w-0 bg-gray-700 py-0.5 pl-1 text-white placeholder:text-gray-400 focus:outline"></input>
         
-        <button type="button" id="convertbutton" onClick={handleConvert} className="shrink-0 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 active:bg-blue-800 transition-colors duration-200">
+        <button type="button" id="convertbutton" onClick={handleConvert} className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-black shadow-sm hover:bg-blue-700 active:bg-white-800 transition-colors duration-200">
           Convert
         </button>
       
