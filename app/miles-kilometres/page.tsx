@@ -7,7 +7,7 @@ export default function MilesKilometres() {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">Imperial & Metric Converter
           <div className="hidden md:flex space-x-8">
             <a href="/pounds-kilograms" className="text-white hover:text-blue-600">pounds-kilograms</a>
-            <a href="/miles-kilometres" className="text-white hover:text-blue-600">miles-kilometres</a>
+            <a href="/miles-kil;ometres" className="text-white hover:text-blue-600">miles-kilometres</a>
             <a href="/farenheit-celcius" className="text-white hover:text-blue-600">farenheit-celcius</a>
           </div>
         </div>
@@ -16,6 +16,9 @@ export default function MilesKilometres() {
       <div>
         <h1>Miles to Kilometres</h1>
         {/* input box */}
+        <input type="number" id="miles" name="Miles to Kilometres" placeholder="0" className="block min-w-0 bg-gray-700 py-0.5 pl-1 text-white placeholder:text-gray-400 focus:outline"></input>
+        
+        <script src="scripts.js"></script>
         <div></div>
         {/* switch button */}
         <div></div>
