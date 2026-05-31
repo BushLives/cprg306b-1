@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function PoundsKilograms() {
   return (
     <div className="bg-gray-800 font-sans">
       <nav className="bg-gray-800 shadow-md w-full rounded">
@@ -12,6 +12,16 @@ export default function Home() {
           </div>
         </div>
       </nav>
+      
+      <div>
+        <h1>Convert between pounds and kilograms</h1>
+        {/* input box */}
+        <div></div>
+        {/* switch button */}
+        <div></div>
+        {/* output box */}
+        <div></div>
+      </div>
     </div>
   );
 }
