@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function converter(convertFromUnit: String, convertToUnit: String){
     const conversions: Record<string, (x:number) => number> = {
-        'miles-kilometers': (x) => x * 1.60934,
+        'miles-kilometers': (x) => x / 1000,
         'kilometers-miles': (x) => x * 0.621371,
     }
 
@@ -46,11 +46,13 @@ export default function MilesKilometres() {
       
         
         {/* switch button */}
+        <a href="/kilometres-miles" className="text-white hover:text-blue-600">Miles to Kilometers</a>
+
+        
+        {/* output box */}
         {result !== null && (
           <p className="mt-4">{inputValue} Miles = {result} kilometres</p>
         )}
-        
-        {/* output box */}
       
       
     </div>
