@@ -2,6 +2,8 @@ function converter(convertFromUnit, convertToUnit){
     const conversions = {
         'pounds-kilos': (x) => x * 0.45359237,
         'kilos-pounds': (x) => x * 2.2046226218,
+        'miles-kilometers': (x) => x * 1.60934,
+        'kilometers-miles': (x) => x * 0.621371,
     }
 
     const key = `${convertFromUnit}-${convertToUnit}`
