@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const convert = document.getElementById('convert-button')
+
+    convert.addEventListener('click', () => {
+        const MtoKM = convert('miles', 'kilometers');
+        const miles = document.getElementById('miles').value;
+
+        const kilometers = MtoKM(miles)
+
+        document.getElementById("resultKM").textContent = `${miles} Miles = ${kilometers} kilometres`;
+    })
+})
+
 function converter(convertFromUnit, convertToUnit){
     const conversions = {
         'pounds-kilos': (x) => x * 0.45359237,
@@ -17,3 +31,5 @@ function converter(convertFromUnit, convertToUnit){
         }
     }
 }
+
+
