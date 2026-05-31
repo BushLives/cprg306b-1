@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Script from "next/script";
+import { Converter } from "../components/Converter";
 
 export default function farenheitCelcius() {
   return (
@@ -12,6 +13,30 @@ export default function farenheitCelcius() {
           </div>
         </div>
       </nav>
+      <div>
+        <h1>Fahrenheit to Celcius</h1>
+        {/* input box */}
+        <div>
+          <form id="numInput" className="block min-w-0 bg-gray-700 py-0.5 pl-1 text-white placeholder:text-gray-400 focus:outline"></form>
+          <div className="flex flex-row justify-between w-55">
+             <button type="button" id="convert-button" className="bg-gray-100 rounded-md px-1 py-0.5 text.sm font-medium text-gray-700 shadow-sm hover:bg-gray-300 p-4 mr-2">
+              Convert
+              </button>
+              {/* switch button */}
+              <button type="button" id="switch-button" className="bg-gray-100 rounded-md px-1 py-0.5 text.sm font-medium text-gray-700 shadow-sm hover:bg-gray-300">
+                Switch
+              </button>
+          </div>        
+      </div>
+        <div></div>
+        
+        <div>
+          
+        </div>
+        <p id="resultKM" className="mt-4 text-lg font-semibold">HELP ME</p>
+        {/* output box */}
+        <div></div>
+      </div>
     </div>
   );
 }
