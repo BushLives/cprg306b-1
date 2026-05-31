@@ -34,7 +34,7 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">Imperial & Metric Converter
               <div className="space-x-8">
                 <a href="/pounds-kilograms" className="text-white hover:text-blue-600">pounds-kilograms</a>
-                <a href="/miles-kilometres" className="text-white hover:text-blue-600">miles-kilometres</a>
+                <a href="/kilometres-miles/miles-kilometres" className="text-white hover:text-blue-600">miles-kilometres</a>
                 <a href="/farenheit-celcius" className="text-white hover:text-blue-600">farenheit-celcius</a>
               </div>
             </div>
