@@ -13,7 +13,10 @@ export default function PoundsKilograms() {
       <div>
         <h1>Convert between pounds and kilograms</h1>
         {/* input box */}
-        <div></div>
+        <div>
+          <input type="text" placeholder="Enter number you would like to convert"/>
+          {/* <span class=''></span> */}
+        </div>
         {/* switch button */}
         <div></div>
         {/* output box */}
